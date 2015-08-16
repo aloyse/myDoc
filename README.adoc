@@ -1,0 +1,35 @@
+= myDoc
+Aloyse Gilbert <aloyse.gilbert@chdn.lu>
+v0.1, 16-08-2015
+:icons: font
+:toc: macro
+
+documenting, the ascii way.
+
+toc::[]
+
+== Rules
+--
+[horizontal]
+APPLY::	stick to the rules
+KISS::	keep number of rules small
+--
+TIP: *re-evaluate* the rules as often as you can
+
+== Toolchain
+The tools used, and how to work with them
+
+Linux::
+* TODO::
+
+Windows::
+* Notepad++ with https://github.com/edusantana/asciidoc-highlight[syntaxHighlighter^]
+* preview in browsers using http://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[Addons^]
+* http://jruby.org/download[JRuby^] install
++
+[source]
+gem install asciidoctor
+gem install --pre asciidoctor-pdf
+
+
+
