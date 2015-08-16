@@ -4,6 +4,7 @@ v0.2, 16-08-2015
 :icons: font
 :toc: left
 :toclevels: 2
+:pdf-page-size: A4
 
 documenting, the ascii way.
 
@@ -64,6 +65,7 @@ IMPORTANT: too far to the right...
 
 * firefox plugin is not complete.
 
+* pdf fonts are limited eg. `UTF-8 snowman` -> [☃] will not be rendered
 
 
 	
