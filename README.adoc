@@ -1,26 +1,31 @@
 = myDoc
 Aloyse Gilbert <aloyse.gilbert@chdn.lu>
-v0.1, 16-08-2015
+v0.2, 16-08-2015
 :icons: font
-:toc: macro
+:toc: left
+:toclevels: 2
 
 documenting, the ascii way.
 
-toc::[]
-
 == Rules
+
+follow the rules as best-practices, update this section, and ...
+
+TIP: *re-evaluate* the rules as often as you can
+
 --
 [horizontal]
 APPLY::	stick to the rules
 KISS::	keep number of rules small
+SECTIONS::
+	* use initial capital
 --
-TIP: *re-evaluate* the rules as often as you can
 
 == Toolchain
 The tools used, and how to work with them
 
 Linux::
-* TODO::
+* TODO
 
 Windows::
 * Notepad++ with https://github.com/edusantana/asciidoc-highlight[syntaxHighlighter^]
@@ -32,4 +37,33 @@ gem install asciidoctor
 gem install --pre asciidoctor-pdf
 
 
+== Generate documents
 
+=== Html5
+
+generate html5 with external css (to modify it :)
+
+`asciidoctor -a linkcss .\README.adoc` will give a html5 document named link:README.html[`README.html`^]
+   
+use the `-b xhtml5` argument to produce xml compliant html5  
+   
+=== Pdf
+
+`asciidoctor-pdf .\README.adoc` will give a pdf document named link:README.pdf[`README.pdf`^]
+
+== Style
+
+get stylish ...
+TODO
+
+== Issues
+
+* asciidoctor-pdf indents Admonitions too far - compared to html5
+
+IMPORTANT: too far to the right...
+
+* firefox plugin is not complete.
+
+
+
+	
