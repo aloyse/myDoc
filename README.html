@@ -410,6 +410,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -448,6 +451,38 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_rules">Rules</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p>some text <span class="icon"><i class="fa fa-heart fa-2x"></i></span></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Related information</div>
+<div class="paragraph">
+<p>This is aside text.</p>
+</div>
+<div class="paragraph">
+<p>It is used to present information related to the main content.</p>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">app.rb</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ruby" data-lang="ruby">require 'sinatra'
+get '/hi' do
+  "Hello World!"
+end</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml" data-lang="xml">&lt;meta name="viewport"
+  content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is normal content.</p>
+</div>
+<div class="paragraph">
 <p>follow the rules as best-practices, update this section, and &#8230;&#8203;</p>
 </div>
 <div class="admonitionblock tip">
@@ -479,7 +514,7 @@ APPLY
 KISS
 </td>
 <td class="hdlist2">
-<p>keep number of rules small</p>
+<p>Keep It Small and Simple</p>
 </td>
 </tr>
 <tr>
@@ -534,7 +569,7 @@ SECTIONS
 <p><a href="http://jruby.org/download" target="_blank">JRuby</a> install</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>gem install asciidoctor
+<pre class="highlightjs highlight"><code>gem install asciidoctor
 gem install --pre asciidoctor-pdf</code></pre>
 </div>
 </div>
@@ -616,7 +651,7 @@ too far to the right&#8230;&#8203;
 <div id="footer">
 <div id="footer-text">
 Version 0.2<br>
-Last updated 2015-08-16 18:25:11 CEST
+Last updated 2015-09-01 19:14:39 CEST
 </div>
 </div>
 </body>
